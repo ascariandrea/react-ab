@@ -27,7 +27,7 @@
   var browserCookie = {
     get: function (name) {
       var eq = name + "="
-        , ca = document.cookie.split(";")
+        , ca = document && document.cookie.split(";")
         , c = null;
       for(var i=0;i < ca.length;i += 1) {
         c = ca[i];
